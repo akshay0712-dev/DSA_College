@@ -10,11 +10,9 @@ void printArr(int *arr, int n) {
 void merge(int *arr, int l, int mid, int r) {
     int tempArrSize = r - l + 1;
     int *tempArr = (int *)malloc(tempArrSize * sizeof(int));
-    
     int k = 0;
     int i = l;
     int j = mid + 1;
-
     while (i <= mid && j <= r) {
         tempArr[k++] = (arr[i] <= arr[j]) ? arr[i++] : arr[j++];
     }
@@ -24,11 +22,9 @@ void merge(int *arr, int l, int mid, int r) {
     while (j <= r) {
         tempArr[k++] = arr[j++];
     }
-
     for (int m = 0; m < tempArrSize; m++) {
         arr[l + m] = tempArr[m];
     }
-    free(tempArr);
 }
 
 void mergeSort(int *arr, int l, int r) {
