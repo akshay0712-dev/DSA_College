@@ -1,4 +1,4 @@
-# Akshay Kumar  
+# Akshay Kumar (Branch: Computer Science)
 **Roll No:** 24520  
 **Registration No:** 24105142007  
 
