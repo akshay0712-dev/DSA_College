@@ -4,7 +4,6 @@
 int keyPosition(int arr[], int key, int s, int e) {
     while (s <= e) {
         int mid = s + (e - s) / 2;
-
         if (arr[mid] == key)
             return mid + 1;   
         else if (arr[mid] < key)
@@ -25,7 +24,6 @@ void modifiedInsertionSort(int arr[], int n) {
             arr[j + 1] = arr[j];
             j--;
         }
-
         arr[keyIndex] = key;
     }
 }
